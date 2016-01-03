@@ -1,0 +1,236 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      9291,        227]
+NotebookOptionsPosition[      8961,        210]
+NotebookOutlinePosition[      9316,        226]
+CellTagsIndexPosition[      9273,        223]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{"ClearAll", ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"L", " ", "=", " ", "20"}], ";"}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"r", "=", " ", 
+      SqrtBox[
+       RowBox[{
+        SuperscriptBox["x", "2"], "+", 
+        SuperscriptBox["y", "2"]}]]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"alpha", " ", "=", " ", 
+      RowBox[{"ArcCos", "[", 
+       RowBox[{"1", "-", 
+        FractionBox[
+         SuperscriptBox["r", "2"], 
+         RowBox[{"2", " ", 
+          SuperscriptBox["L", "2"]}]]}], "]"}]}], ";", "\[IndentingNewLine]", 
+     
+     RowBox[{"beta", " ", "=", " ", 
+      RowBox[{"ArcTan", "[", 
+       FractionBox["y", "x"], "]"}]}], ";", "\[IndentingNewLine]", 
+     "\[IndentingNewLine]", 
+     RowBox[{"theta", " ", "=", " ", 
+      RowBox[{"If", "[", 
+       RowBox[{
+        RowBox[{"beta", "<", "0"}], ",", 
+        RowBox[{"Pi", "+", "beta"}], ",", "beta"}], "]"}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"sigma", " ", "=", " ", 
+      RowBox[{"ArcSin", "[", 
+       RowBox[{
+        FractionBox["L", "r"], 
+        RowBox[{"Sin", "[", "alpha", "]"}]}], "]"}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"gamma", " ", "=", " ", 
+      RowBox[{"theta", " ", "-", " ", "sigma"}]}], ";", "\[IndentingNewLine]",
+      "\[IndentingNewLine]", 
+     RowBox[{"Plot", "[", 
+      RowBox[{"0", ",", 
+       RowBox[{"{", 
+        RowBox[{"z", ",", "0", ",", "1"}], "}"}], ",", 
+       RowBox[{"PlotRange", "\[Rule]", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "15"}], ",", "15"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"0", ",", "20"}], "}"}]}], "}"}]}], ",", " ", 
+       RowBox[{"Epilog", "\[Rule]", 
+        RowBox[{"{", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"Brown", ",", 
+            RowBox[{"Thickness", "[", "0.01", "]"}], ",", " ", 
+            RowBox[{"PointSize", "[", "0.02", "]"}], ",", " ", 
+            RowBox[{"Line", "[", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"{", 
+                RowBox[{"0", ",", "0"}], "}"}], ",", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"L", " ", 
+                  RowBox[{"Cos", "[", "gamma", "]"}]}], ",", 
+                 RowBox[{"L", " ", 
+                  RowBox[{"Sin", "[", "gamma", "]"}]}]}], "}"}]}], "}"}], 
+             "]"}]}], "}"}], ",", "\[IndentingNewLine]", 
+          "\[IndentingNewLine]", 
+          RowBox[{"{", 
+           RowBox[{"Brown", ",", 
+            RowBox[{"Thickness", "[", "0.01", "]"}], ",", " ", 
+            RowBox[{"PointSize", "[", "0.02", "]"}], ",", " ", 
+            RowBox[{"Line", "[", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"L", " ", 
+                  RowBox[{"Cos", "[", "gamma", "]"}]}], ",", 
+                 RowBox[{"L", " ", 
+                  RowBox[{"Sin", "[", "gamma", "]"}]}]}], "}"}], ",", 
+               RowBox[{"{", 
+                RowBox[{"x", ",", "y"}], "}"}]}], "}"}], "]"}]}], "}"}], ",", 
+          "\[IndentingNewLine]", 
+          RowBox[{"{", 
+           RowBox[{"Red", ",", " ", 
+            RowBox[{"PointSize", "[", "0.02", "]"}], ",", " ", 
+            RowBox[{"Point", "[", 
+             RowBox[{"{", 
+              RowBox[{"{", 
+               RowBox[{"x", ",", "y"}], "}"}], "}"}], "]"}]}], "}"}]}], 
+         "\[IndentingNewLine]", "}"}]}]}], "]"}]}], "\[IndentingNewLine]", 
+    "\[IndentingNewLine]", "}"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", 
+     RowBox[{"-", "15"}], ",", "15"}], "}"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"y", ",", "0", ",", "20"}], "}"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.6535445800529413`*^9, 3.653544911781982*^9}, {
+   3.6535449588796186`*^9, 3.65354502297402*^9}, {3.6535450579609547`*^9, 
+   3.653545151747799*^9}, {3.653545213554531*^9, 3.653545255729477*^9}, {
+   3.653545416905445*^9, 3.6535454282400084`*^9}, {3.653545459475151*^9, 
+   3.653545497418476*^9}, {3.653545549106642*^9, 3.6535455975903*^9}, {
+   3.653545640487062*^9, 3.653545836898533*^9}, {3.653545867309394*^9, 
+   3.653545901292609*^9}, {3.6535459544265127`*^9, 3.653545954545005*^9}, {
+   3.653546040269229*^9, 3.653546079629613*^9}, {3.653546179181073*^9, 
+   3.653546182426662*^9}, {3.653546282415661*^9, 3.653546282541445*^9}, {
+   3.653546405359354*^9, 3.653546418645471*^9}, {3.653547293077503*^9, 
+   3.6535472984982023`*^9}, {3.653547374903418*^9, 3.653547557062381*^9}, {
+   3.65354821401263*^9, 3.653548220244631*^9}, {3.653548275430208*^9, 
+   3.6535482873074417`*^9}, {3.653548379231942*^9, 3.653548397679926*^9}, 
+   3.653548430929841*^9, {3.653548470343972*^9, 3.653548477877005*^9}, {
+   3.653548664638435*^9, 3.653548664782734*^9}, {3.653548728184073*^9, 
+   3.653548753869195*^9}, {3.653548961671966*^9, 3.653548962198675*^9}, {
+   3.655279798542593*^9, 3.655279819892631*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`x$$ = -10.8, $CellContext`y$$ = 
+    5.050000000000001, Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`x$$], -15, 15}, {
+      Hold[$CellContext`y$$], 0, 20}}, Typeset`size$$ = {290., {88., 92.}}, 
+    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`x$25902$$ = 0, $CellContext`y$25903$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`x$$ = -15, $CellContext`y$$ = 0}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`x$$, $CellContext`x$25902$$, 0], 
+        Hold[$CellContext`y$$, $CellContext`y$25903$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, 
+      "Body" :> {$CellContext`r = ($CellContext`x$$^2 + $CellContext`y$$^2)^
+          Rational[1, 2]; $CellContext`alpha = 
+         ArcCos[1 - $CellContext`r^2/(2 $CellContext`L^2)]; $CellContext`beta = 
+         ArcTan[$CellContext`y$$/$CellContext`x$$]; $CellContext`theta = 
+         If[$CellContext`beta < 0, 
+           Pi + $CellContext`beta, $CellContext`beta]; $CellContext`sigma = 
+         ArcSin[($CellContext`L/$CellContext`r) 
+           Sin[$CellContext`alpha]]; $CellContext`gamma = $CellContext`theta - \
+$CellContext`sigma; 
+        Plot[0, {$CellContext`z, 0, 1}, PlotRange -> {{-15, 15}, {0, 20}}, 
+          Epilog -> {{Brown, 
+             Thickness[0.01], 
+             PointSize[0.02], 
+             
+             Line[{{0, 
+               0}, {$CellContext`L Cos[$CellContext`gamma], $CellContext`L 
+                Sin[$CellContext`gamma]}}]}, {Brown, 
+             Thickness[0.01], 
+             PointSize[0.02], 
+             Line[{{$CellContext`L Cos[$CellContext`gamma], $CellContext`L 
+                Sin[$CellContext`gamma]}, {$CellContext`x$$, \
+$CellContext`y$$}}]}, {Red, 
+             PointSize[0.02], 
+             Point[{{$CellContext`x$$, $CellContext`y$$}}]}}]}, 
+      "Specifications" :> {{$CellContext`x$$, -15, 15}, {$CellContext`y$$, 0, 
+         20}}, "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{335., {146., 151.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.653548221617075*^9, {3.653548276117079*^9, 3.653548288307691*^9}, 
+   3.65354839828509*^9, 3.653548432152422*^9, 3.6535484784217367`*^9, 
+   3.65354866553537*^9, {3.653548737604439*^9, 3.653548754876248*^9}, 
+   3.6535489632927713`*^9, 3.655279261883436*^9, {3.655279799571642*^9, 
+   3.6552798211594477`*^9}}]
+}, Open  ]]
+},
+WindowSize->{1272, 751},
+WindowMargins->{{Automatic, 0}, {Automatic, 0}},
+FrontEndVersion->"9.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (January 25, \
+2013)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 5182, 120, 485, "Input"],
+Cell[5764, 144, 3181, 63, 314, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
