@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabViewPython", "LabViewPython\LabViewPython.csproj", "{AD087F19-F796-453D-BD08-29D931B1FEBF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AD087F19-F796-453D-BD08-29D931B1FEBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD087F19-F796-453D-BD08-29D931B1FEBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD087F19-F796-453D-BD08-29D931B1FEBF}.Debug|x86.ActiveCfg = Debug|x86
+		{AD087F19-F796-453D-BD08-29D931B1FEBF}.Debug|x86.Build.0 = Debug|x86
+		{AD087F19-F796-453D-BD08-29D931B1FEBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD087F19-F796-453D-BD08-29D931B1FEBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD087F19-F796-453D-BD08-29D931B1FEBF}.Release|x86.ActiveCfg = Release|x86
+		{AD087F19-F796-453D-BD08-29D931B1FEBF}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
